@@ -20,9 +20,9 @@ int main(void)
     p("\nMultiplicacion: %d * %d = %d", num1, num2, multip);
     if (num2 == 0)
     {
-        p("No existe: ");
-    }else div = num1 / num2;
-    p("\nDivision: %d / %d = %d", num1, num2, div);
+        p("\nNo existe");
+    }else {div = num1 / num2;
+    p("\nDivision: %d / %d = %d", num1, num2, div);}
     
     
 
