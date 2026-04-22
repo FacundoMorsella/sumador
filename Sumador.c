@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    int num1, num2, suma, resta;
+    int num1, num2, suma, resta, multip, div;
 
     p("Ingrese un valor: ");
     s("%d", &num1);
@@ -13,9 +13,19 @@ int main(void)
 
     suma = num1 + num2;
     resta = num1 - num2;
+    multip = num1 * num2;
 
     p("Suma: %d + %d = %d", num1, num2, suma);
     p("\nResta: %d - %d = %d", num1, num2, resta);
+    p("\nMultiplicacion: %d * %d = %d", num1, num2, multip);
+    if (num2 == 0)
+    {
+        p("No existe: ");
+    }else div = num1 / num2;
+    p("\nDivision: %d / %d = %d", num1, num2, div);
+    
+    
+
 
     return 0;
 }
